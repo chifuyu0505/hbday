@@ -132,10 +132,12 @@
                 $await(Jscex.Async.sleep(10));
             }
             while (seed.canMove()) {
-                seed.move(0, 2);
-                foot.draw();
-                $await(Jscex.Async.sleep(10));
-            }
+    seed.move(0, 2);
+    foot.draw();
+    $await(Jscex.Async.sleep(10));
+}
+
+seed.hide();
         }));
 
         var growAnimate = eval(Jscex.compile("async", function () {
