@@ -187,6 +187,10 @@
         h + 50
     );
 },
+        hide: function() {
+    var ctx = this.tree.ctx;
+    ctx.clearRect(350, 150, 400, 400);
+},
         hover: function(x, y) {
             var ctx = this.tree.ctx;
             var pixel = ctx.getImageData(x, y, 1, 1);
